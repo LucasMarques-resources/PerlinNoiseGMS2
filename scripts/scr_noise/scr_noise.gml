@@ -85,7 +85,7 @@ function noise(_x, _y = 100.213, _z = 450.4215) {
     BA = _p[B]+_Z;
     BB = _p[B+1]+_Z;
 
-	//returns a number between -1 and 1
+	//returns a er between -1 and 1
     return _lerp(_w, _lerp(_v, _lerp(_u,_grad(_p[AA  ], _x  , _y  , _z   ),  // AND ADD
 										_grad(_p[BA  ], _x-1, _y  , _z   )), // BLENDED
                              _lerp(_u,	_grad(_p[AB  ], _x  , _y-1, _z   ),  // RESULTS

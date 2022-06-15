@@ -3,9 +3,11 @@
     {"id":{"name":"oControl","path":"objects/oControl/oControl.yy",},"order":2,},
     {"id":{"name":"scr_functions","path":"scripts/scr_functions/scr_functions.yy",},"order":1,},
     {"id":{"name":"scr_noise","path":"scripts/scr_noise/scr_noise.yy",},"order":0,},
+    {"id":{"name":"r_PerlinNoise_1d","path":"rooms/r_PerlinNoise_1d/r_PerlinNoise_1d.yy",},"order":2,},
     {"id":{"name":"r_PerlinNoise_1d_x_y","path":"rooms/r_PerlinNoise_1d_x_y/r_PerlinNoise_1d_x_y.yy",},"order":1,},
     {"id":{"name":"oPerlinNoise_1d_x_y","path":"objects/oPerlinNoise_1d_x_y/oPerlinNoise_1d_x_y.yy",},"order":1,},
     {"id":{"name":"oPerlinNoise_1d_x","path":"objects/oPerlinNoise_1d_x/oPerlinNoise_1d_x.yy",},"order":0,},
+    {"id":{"name":"oPerlinNoise_1d","path":"objects/oPerlinNoise_1d/oPerlinNoise_1d.yy",},"order":3,},
     {"id":{"name":"r_PerlinNoise_1d_x","path":"rooms/r_PerlinNoise_1d_x/r_PerlinNoise_1d_x.yy",},"order":0,},
   ],
   "Options": [
@@ -22,6 +24,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"r_PerlinNoise_1d","path":"rooms/r_PerlinNoise_1d/r_PerlinNoise_1d.yy",},},
     {"roomId":{"name":"r_PerlinNoise_1d_x_y","path":"rooms/r_PerlinNoise_1d_x_y/r_PerlinNoise_1d_x_y.yy",},},
     {"roomId":{"name":"r_PerlinNoise_1d_x","path":"rooms/r_PerlinNoise_1d_x/r_PerlinNoise_1d_x.yy",},},
   ],

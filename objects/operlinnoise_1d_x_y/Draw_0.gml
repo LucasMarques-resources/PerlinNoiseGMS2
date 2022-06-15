@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 //var _xx = random(room_width);
+//var _yy = random(room_height);
 
 var _xx = map(noise(xoff1), -1, 1, 0, room_width);
 var _yy = map(noise(xoff2), -1, 1, 0, room_height);
