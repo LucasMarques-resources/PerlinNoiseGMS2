@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "PN_2d",
+    "path": "folders/Objects/PN_2d.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPerlinNoise_2d_random",

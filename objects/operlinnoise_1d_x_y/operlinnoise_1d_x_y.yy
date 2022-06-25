@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "PN_1d",
+    "path": "folders/Objects/PN_1d.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPerlinNoise_1d_x_y",
