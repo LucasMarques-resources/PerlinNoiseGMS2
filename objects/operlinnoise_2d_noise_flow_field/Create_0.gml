@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-surface = -1;
-
-loop = true;
 xoff = 0;
 y_start = 0;
 yoff = y_start;
