@@ -4,8 +4,8 @@
 surface = -1;
 
 loop = true;
-xoff = random(100);
-y_start = random(100);
+xoff = 0;
+y_start = 0;
 yoff = y_start;
 zoff = 0;
 increment = 0.1;
