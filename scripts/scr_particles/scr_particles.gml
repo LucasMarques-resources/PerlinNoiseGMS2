@@ -1,9 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function particle()
+function particle() constructor
 {
-	pos = new vector(0, 0);
-	vel = new vector(0, 0);
+	pos = new vector(irandom(room_width), irandom(room_height));
+	vel = new vector_random();
 	accel = new vector(0, 0);
 	
 	static update = function()
@@ -22,4 +22,13 @@ function particle()
 	{
 		draw_point(pos.x, pos.y);
 	}
+	
+	function edge_wrap()
+	{	
+		if (pos.x > room_width) pos.x = 0;
+		if (pos.x < 0) pos.x = room_width;
+		if (pos.y > room_height) pos.y = 0;
+		if (pos.y < 0) pos.y = room_height;
+	}
+
 }

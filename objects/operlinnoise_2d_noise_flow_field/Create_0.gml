@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-surface = surface_create(room_width, room_height);
+surface = -1;
 
 loop = true;
 xoff = random(100);
@@ -13,3 +13,10 @@ increment = 0.1;
 scl = 10;
 cols = floor(room_width/scl);
 rows = floor(room_height/scl);
+
+particles = [];
+
+for (var i = 0; i < 100; i++)
+{
+	particles[i] = new particle();	
+}
