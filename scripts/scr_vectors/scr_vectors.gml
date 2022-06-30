@@ -110,7 +110,6 @@ function vector_random(_length = 1) : vector() constructor
 
 function vector_lengthdir(_length, _dir) : vector() constructor {
     x = lengthdir_x(_length, _dir);
-    x = lengthdir_x(_length, _dir);
     y = lengthdir_y(_length, _dir);
 }
 

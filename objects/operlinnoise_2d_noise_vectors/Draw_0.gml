@@ -11,8 +11,8 @@ for (var xx = 0; xx < cols; xx += _inc)
 		var _dir = noise(xoff, yoff, zoff);
 		_dir_map = map(_dir, -1, 1, 0, 359);
 			
-		var _vec = new vector_lengthdir(scl, _dir_map);
-		draw_line(xx * scl, yy * scl, xx * scl + _vec.x, yy * scl + _vec.y);
+		var _vec = new vector_lengthdir(global.scl, _dir_map);
+		draw_line(xx * global.scl, yy * global.scl, xx * global.scl + _vec.x, yy * global.scl + _vec.y);
 			
 		yoff += increment;
 	}

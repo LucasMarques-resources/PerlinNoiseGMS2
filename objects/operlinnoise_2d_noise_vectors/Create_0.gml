@@ -7,6 +7,6 @@ yoff = y_start;
 zoff = 0;
 increment = 0.1;
 
-scl = 10;
-cols = floor(room_width/scl);
-rows = floor(room_height/scl);
+global.scl = 10;
+cols = floor(room_width/global.scl);
+rows = floor(room_height/global.scl);
