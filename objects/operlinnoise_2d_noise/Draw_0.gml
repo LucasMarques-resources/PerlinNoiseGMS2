@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (!surface_exists(surface))
+{
+	surface = surface_create(room_width, room_height);
+}
+
 var _inc = 1;
 if (loop)
 {

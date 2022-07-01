@@ -14,6 +14,7 @@ rows = room_height/global.scl;
 
 particles = [];
 
+
 global.flowfield = ds_grid_create(cols, rows);
 ds_grid_clear(global.flowfield, 0);
 
@@ -21,5 +22,3 @@ for (var i = 0; i < 100; i++)
 {
 	particles[i] = new particle();	
 }
-
-surface = -1;

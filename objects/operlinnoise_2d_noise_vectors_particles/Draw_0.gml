@@ -9,20 +9,17 @@ for (var xx = 0; xx < ds_grid_width(global.flowfield); xx += _inc)
 	for (var yy = 0; yy < ds_grid_height(global.flowfield); yy += _inc)
 	{	
 		var _dir = noise(xoff, yoff, zoff);
-		_dir_map = map(_dir, -1, 1, 0, 360 * 2);
-		
+		_dir_map = map(_dir, -1, 1, 0, 359);
+			
 		var _vec = new vector_lengthdir(global.scl, _dir_map);
 		var _vec_add = vector_copy(_vec);
-		_vec_add.set_magnitude(1);
+		_vec_add.set_magnitude(0.1);
 		
 		ds_grid_add(global.flowfield, xx, yy, _vec_add);
 		
-		if (global.debugMode)
-		{
-			draw_set_alpha(.5);
-			draw_line((xx + 1) * global.scl, (yy + 1) * global.scl, (xx + 1) * global.scl + _vec.x, (yy + 1) * global.scl + _vec.y);
-			draw_set_alpha(1);
-		}
+		draw_set_alpha(.5);
+		draw_line((xx + 1) * global.scl, (yy + 1) * global.scl, (xx + 1) * global.scl + _vec.x, (yy + 1) * global.scl + _vec.y);
+		draw_set_alpha(1);
 			
 		yoff += increment;
 	}
@@ -48,21 +45,10 @@ if (global.debugMode)
 	draw_set_alpha(1);
 }
 
-if (!surface_exists(surface))
-{
-	surface = surface_create(ds_grid_width(global.flowfield) * global.scl, ds_grid_height(global.flowfield) * global.scl);	
-}
-
-surface_set_target(surface);
-
 for (var i = 0; i < array_length(particles); i++)
 {
 	particles[i].follow();
 	particles[i].update();
-	particles[i].edge_wrap();
 	particles[i].show();
+	particles[i].edge_wrap();
 }
-
-surface_reset_target();
-
-draw_surface(surface, 0, 0);
