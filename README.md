@@ -8,7 +8,7 @@ Eg: 2d noise
 
 ![image](https://user-images.githubusercontent.com/75506292/206869321-db7f805d-a4cd-4988-806b-f4c190753631.png)
 
-<img src="https://user-images.githubusercontent.com/75506292/206869321-db7f805d-a4cd-4988-806b-f4c190753631.png" width="200" height="400" />
+<img src="https://user-images.githubusercontent.com/75506292/206869321-db7f805d-a4cd-4988-806b-f4c190753631.png" width="400" height="auto" />
 
 Eg: 2d noise flow fields
 
