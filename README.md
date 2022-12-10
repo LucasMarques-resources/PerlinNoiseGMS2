@@ -2,7 +2,8 @@
 
 Perlin Noise in GMS2
 
-![image](https://user-images.githubusercontent.com/75506292/206869313-ab972d96-bf20-4b2d-8290-8386da71d7b5.png)
+![image](https://user-images.githubusercontent.com/75506292/206869623-072c58b4-5fc8-44fe-b890-3a99aea3b406.png)
+
 
 Eg: 2d noise
 
